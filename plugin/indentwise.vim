@@ -472,12 +472,12 @@ if !exists("g:indentwise_suppress_keymaps") || !g:indentwise_suppress_keymaps
         sunmap ]_
     endif
     if !hasmapto('<Plug>(IndentWiseBlockScopeBoundaryBegin)')
-        map [% <Plug>(IndentWiseBlockScopeBoundaryBegin)
-        sunmap [%
+        map [^ <Plug>(IndentWiseBlockScopeBoundaryBegin)
+        sunmap [^
     endif
     if !hasmapto('<Plug>(IndentWiseBlockScopeBoundaryEnd)')
-        map ]% <Plug>(IndentWiseBlockScopeBoundaryEnd)
-        sunmap ]%
+        map ]^ <Plug>(IndentWiseBlockScopeBoundaryEnd)
+        sunmap ]^
     endif
 
 endif
